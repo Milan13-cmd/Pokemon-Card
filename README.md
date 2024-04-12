@@ -3,7 +3,7 @@
 This is a simple web application that allows users to generate Pokémon cards randomly. The application fetches data from the PokeAPI and displays the Pokémon's name, official artwork image, primary type, HP, attack, defense, and speed stats in a card format.
 
 ## Demo
-![Pokémon Card Demo](pokemon.png) height="200px"
+![Pokémon Card Demo](pokemon.png)
 
 ## Features
 
