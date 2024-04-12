@@ -1,0 +1,157 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  width: 100%;
+  background-color: #38424b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards {
+  width: 350px;
+  max-width: 60%;
+  height: 50vh;
+  background-color: #697878;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden; /* Added to prevent image overflow */
+  /* background: linear-gradient(to bottom, #a0c0c0, #8a9a9f); */
+  background: linear-gradient(to bottom, #607274, #3a4447);
+
+  box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+.hp {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #f0f8ff;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Image styles */
+#cards img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  object-fit: contain;
+  object-position: center;
+  /* background-color: #38424b; */
+}
+.name{
+  position: absolute;
+  top: 55%;
+  padding: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  color: #f0f8ff;
+ 
+}
+
+span{
+  font-weight: bold;
+}
+
+.stats {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: 100px;
+  padding: 2vw 3vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+ 
+}
+/* Individual stat styles */
+.stats div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 14px 10px;
+  height: 7.2vh;
+  width: 15vw;
+  background: linear-gradient(to bottom, #f0ffff, #e0f7ff);
+  box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  
+}
+
+.stats div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Name container styles */
+#cards h2 {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f0f8ff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+/* Button styles */
+#btn {
+  margin-top: 50px;
+  padding: 1.2vw 2vw;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-right:2px solid rgb(234, 224, 224) ;
+  border-left: 2px solid rgb(205, 193, 193);
+  cursor: pointer;
+  scale: 0.9; 
+  transition: all ease-in-out .4s;
+  color: #697878;
+}
+
+#btn:active {
+  transform: translate3d(0, 0, 0) scale(0.9);
+}
+#btn:hover{
+  letter-spacing: 4px;
+  scale: 1;
+  color: #59c2e2;
+  border-right:2px solid rgb(190, 163, 163) ;
+  border-left: 2px solid rgb(171, 152, 152);
+}
