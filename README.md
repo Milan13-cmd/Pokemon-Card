@@ -4,8 +4,7 @@ This is a simple web application that allows users to generate Pokémon cards ra
 
 ## Demo
 
-![Pokémon Card Demo](pokemon.png)
-img[alt=drawing] { width: 200px; }
+![Pokémon Card Demo](pokemon.png) { width: 200px; }
 
 ## Features
 
